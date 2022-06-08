@@ -18,4 +18,4 @@ Example nginx application for Radix
 
 ### Build and start production
 
-    docker-compose -f docker-compose.yaml up -d --build
+    docker-compose up --build

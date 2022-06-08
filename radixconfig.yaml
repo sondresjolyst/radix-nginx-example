@@ -1,0 +1,16 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: sondre-radix-nginx-example
+spec:
+  environments:
+    - name: production
+      build:
+        from: master
+  components:
+    - name: nginx
+      src: "."
+      ports:
+        - name: http
+          port: 4000
+      publicPort: http

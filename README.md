@@ -10,12 +10,12 @@ Example nginx application for Radix
 
 | Container Name		| Dockerfile	| External port	| Internal port	|
 |-----------------------|---------------|---------------|---------------|
-| react-test-container	| Dockerfile	| 4000			| 4000			|
+| nginx-container   	| Dockerfile	| 4000			| 4000			|
 
 ### Build
 
-    docker build -t react-test-application
+    docker build -t radix-nginx-example
 
 ### Build and start production
 
-    docker-compose -f docker-compose.prod.yaml up -d --build
+    docker-compose -f docker-compose.yaml up -d --build
